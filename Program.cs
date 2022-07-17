@@ -32,10 +32,10 @@ class Program{
                 case Menu.Potencia:
                     Potencia();
                     break;
-                /*case Menu.Raiz:
-                    Raiz()
+                case Menu.Raiz:
+                    Raiz();
                     break;
-                case Menu.Fatorial:
+                /*case Menu.Fatorial:
                     Fatorial();
                     break;*/
                 case Menu.Sair:
@@ -155,6 +155,14 @@ class Program{
         Console.WriteLine("\nPressione enter para retornar ao menu.");
         Console.ReadLine();
         }
+    static void Raiz(){
+        Console.WriteLine("Digite o numero a ser calculada a raiz quadrada:");
+        int raiz = int.Parse(Console.ReadLine());
+        int resultadoFinal =  (int)Math.Sqrt(raiz);
+        Console.WriteLine("O resultado e: " + resultadoFinal);
+        Console.WriteLine("\nPressione enter para retornar ao menu.");
+        Console.ReadLine();
 
+    }
         
     }
