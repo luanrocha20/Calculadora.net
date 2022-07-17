@@ -35,9 +35,9 @@ class Program{
                 case Menu.Raiz:
                     Raiz();
                     break;
-                /*case Menu.Fatorial:
+                case Menu.Fatorial:
                     Fatorial();
-                    break;*/
+                    break;
                 case Menu.Sair:
                     saida = true;
                     break;
@@ -163,6 +163,23 @@ class Program{
         Console.WriteLine("\nPressione enter para retornar ao menu.");
         Console.ReadLine();
 
+    }
+    static void Fatorial(){
+        
+        Console.WriteLine("Digite o numero a ser calculado o fatorial: ");
+        int fatorial = int.Parse(Console.ReadLine());
+        int resultadoFinal = fatorial;
+        int calc = fatorial - 1;
+
+        for(int i = fatorial - 1 ; i > 0 ; i--){
+
+            resultadoFinal = resultadoFinal * calc;
+            --calc;
+            }
+
+        Console.WriteLine("Resultado final e igual a:"+ resultadoFinal);
+        Console.WriteLine("\nPressione enter para retornar ao menu.");
+        Console.ReadLine();
     }
         
     }
