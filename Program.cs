@@ -17,15 +17,39 @@ class Program{
             Menu opcao = (Menu)int.Parse(Console.ReadLine());
             
             switch(opcao){
+                case Menu.Soma:
+                    Soma();
+                    break;
                 case Menu.Sair:
                     saida = true;
                     break;
             }
             
             Console.Clear();
-
         }
 
+    static void Soma(){
+       
+        int i;
+        int resultadoFinal = 0;
+        Console.WriteLine("Digite quantos numeros serao calculados: ");
+        int size = int.Parse(Console.ReadLine());
+        int [] somados = new int [size];
         
+        Console.WriteLine("Digite os numeros a serem calculados:");
+        
+        for(i = 0; i < size ; i++){
+            somados[i] = int.Parse(Console.ReadLine());
+        }
+
+        for(i = 0; i < size ; i++){
+            resultadoFinal = resultadoFinal + somados[i];
+        }
+
+        Console.WriteLine("\nResultado e igual a: "+ resultadoFinal);
+        Console.WriteLine("\nPressione enter para retornar ao menu.");
+        Console.ReadLine();
+
+    }    
     }
 }
