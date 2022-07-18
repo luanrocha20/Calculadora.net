@@ -18,24 +18,31 @@ class Program{
             
             switch(opcao){
                 case Menu.Soma:
+                    Console.WriteLine("Voce escolheu a opcao soma.\n");
                     Soma();
                     break;
                 case Menu.Subtracao:
+                    Console.WriteLine("Voce escolheu a opcao subtracao.\n");
                     Subtracao();
                     break;
                 case Menu.Divisao:
+                    Console.WriteLine("Voce escolheu a opcao divisao.\n");
                     Divisao();
                     break;
                 case Menu.Multiplicacao:
+                    Console.WriteLine("Voce escolheu a opcao Multiplicacao.\n");
                     Multiplicacao();
                     break;
                 case Menu.Potencia:
+                    Console.WriteLine("Voce escolheu a opcao potenciacao.\n");
                     Potencia();
                     break;
                 case Menu.Raiz:
+                    Console.WriteLine("Voce escolheu a opcao raiz quadrada.\n");
                     Raiz();
                     break;
                 case Menu.Fatorial:
+                    Console.WriteLine("Voce escolheu a opcao fatorial.\n");
                     Fatorial();
                     break;
                 case Menu.Sair:
